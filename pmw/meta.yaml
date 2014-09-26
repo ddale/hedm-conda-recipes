@@ -1,0 +1,23 @@
+package:
+  name: pmw
+  version: 2.0.0
+
+source:
+  fn: Pmw-2.0.0.tar.gz
+  sha1: 6c8c30cbf6c827533bffa0ea2d9ecb377e02aadf
+  url: https://downloads.sourceforge.net/project/pmw/Pmw-2.0.0.tar.gz
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - Pmw
+
+about:
+  license: MIT
+  home: https://sourceforge.net/projects/pmw/
+  summary: Python megawidgets

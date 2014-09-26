@@ -1,0 +1,12 @@
+--- src/fileio/header/gbmv_util.h	(revision 5505)
++++ src/fileio/header/gbmv_util.h	(working copy)
+@@ -34,7 +34,7 @@
+ 
+ /** from io_util.c **/
+ 
+-int getline( char line[], int max_len);/* returns length of string if ok, otherwise zero */
++/*int getline( char line[], int max_len);*//* returns length of string if ok, otherwise zero */
+                                        /* doesn't count commas, tabs or spaces as input */
+ int getchars( char line[], int max_len); /* like above but counts anything as valid input */
+ int scan_line( char line[], int extract, float val[], int col[] );
+

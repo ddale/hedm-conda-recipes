@@ -1,0 +1,26 @@
+package:
+  name: fabian
+  version: trunk
+
+source:
+  svn_url: http://svn.code.sf.net/p/fable/code/fabian/trunk
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - numpy
+    - pillow
+    - matplotlib
+    - pmw
+#   - pyopengl
+
+test:
+  imports:
+    - Fabian
+
+about:
+  license: LGPL
+  home: https://sourceforge.net/projects/fable/
+  summary: 3D x-ray diffraction utilities

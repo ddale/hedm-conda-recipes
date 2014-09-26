@@ -1,0 +1,10 @@
+--- Makefile	(revision 5505)
++++ Makefile	(working copy)
+@@ -53,7 +53,7 @@
+ 	rm -f $(SPACEGROBJDIR)/*.o
+ 
+ sweeper: ${spacegrobjects} ${fileioobjects} ${sweepobjects} 
+-	$(CC) $(CFLAGS2) base.c -o GrainSweeper ${spacegrobjects} ${sweepobjects} ${fileioobjects} -lm
++	$(CC) $(CFLAGS2) base.c -o grainsweeper ${spacegrobjects} ${sweepobjects} ${fileioobjects} -lm
+ #	$(CC) $(CFLAGS2) test.c -o sweeper ${spacegrobjects} ${sweepobjects} ${fileioobjects}
+

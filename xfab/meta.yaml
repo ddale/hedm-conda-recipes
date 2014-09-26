@@ -1,0 +1,21 @@
+package:
+  name: xfab
+  version: trunk
+
+source:
+  svn_url: http://svn.code.sf.net/p/fable/code/xfab/trunk
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - xfab
+
+about:
+  license: LGPL
+  home: https://sourceforge.net/projects/fable/
+  summary: 3DXRD

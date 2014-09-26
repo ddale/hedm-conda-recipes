@@ -1,0 +1,11 @@
+--- src/fileio/edf_io.c	(revision 5505)
++++ src/fileio/edf_io.c	(working copy)
+@@ -260,7 +260,7 @@
+  /* longer than the old */
+  if(strlen(Header) != header_len){
+    printf("screwed up rewritting of header bozo\n");
+-   printf("original length = %d\nNew length = %d\n",
++   printf("original length = %d\nNew length = %zu\n",
+ 	  header_len, strlen(Header));
+  }
+  return(SUCCESS);

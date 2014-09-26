@@ -1,0 +1,76 @@
+
+
+# File data0000.edf[0]
+# Frame 0
+# Processed on Fri Sep 26 15:18:22 2014
+# Spatial correction from None
+# SPLINE X-PIXEL-SIZE 1.0
+# SPLINE Y-PIXEL-SIZE 1.0
+# DataType = UnsignedShort
+# Omega = 0.00
+# Image = 1
+# Dim_1 = 256
+# Dim_2 = 256
+# ByteOrder = LowByteFirst
+# Omega = 0.000000
+# Threshold = 15000.000000
+# npks = 1
+# Threshold level 15000.000000
+# Number_of_pixels Average_counts    s   f     sc   fc      sig_s  sig_f  cov_sf  IMax_int
+1419  20000.000000  36.000000  77.000000  36.000000  77.000000  9.574271  12.449900  0.000000  20000.000000  
+
+
+
+# File data0001.edf[0]
+# Frame 0
+# Processed on Fri Sep 26 15:18:22 2014
+# Spatial correction from None
+# SPLINE X-PIXEL-SIZE 1.0
+# SPLINE Y-PIXEL-SIZE 1.0
+# DataType = UnsignedShort
+# Omega = 1.00
+# Image = 1
+# Dim_1 = 256
+# Dim_2 = 256
+# ByteOrder = LowByteFirst
+# Omega = 1.000000
+# Threshold = 15000.000000
+# npks = 0
+
+
+# File data0002.edf[0]
+# Frame 0
+# Processed on Fri Sep 26 15:18:22 2014
+# Spatial correction from None
+# SPLINE X-PIXEL-SIZE 1.0
+# SPLINE Y-PIXEL-SIZE 1.0
+# DataType = UnsignedShort
+# Omega = 2.00
+# Image = 1
+# Dim_1 = 256
+# Dim_2 = 256
+# ByteOrder = LowByteFirst
+# Omega = 2.000000
+# Threshold = 15000.000000
+# npks = 1
+# Threshold level 15000.000000
+# Number_of_pixels Average_counts    s   f     sc   fc      sig_s  sig_f  cov_sf  IMax_int
+1419  20000.000000  36.000000  77.000000  36.000000  77.000000  9.574271  12.449900  0.000000  20000.000000  
+
+
+
+# File data0003.edf[0]
+# Frame 0
+# Processed on Fri Sep 26 15:18:22 2014
+# Spatial correction from None
+# SPLINE X-PIXEL-SIZE 1.0
+# SPLINE Y-PIXEL-SIZE 1.0
+# DataType = UnsignedShort
+# Omega = 3.00
+# Image = 1
+# Dim_1 = 256
+# Dim_2 = 256
+# ByteOrder = LowByteFirst
+# Omega = 3.000000
+# Threshold = 15000.000000
+# npks = 0

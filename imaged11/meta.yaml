@@ -1,0 +1,21 @@
+package:
+  name: imaged11
+  version: trunk
+
+requirements:
+  build:
+    - numpy
+  run:
+    - numpy
+    - pillow
+    - xfab
+    - fabio
+
+test:
+  imports:
+    - ImageD11
+
+about:
+  license: LGPL
+  home: https://sourceforge.net/projects/fable/
+  summary: 3D x-ray diffraction utilities

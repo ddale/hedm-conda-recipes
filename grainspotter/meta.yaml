@@ -1,0 +1,18 @@
+package:
+  name: grainspotter
+  version: trunk
+
+source:
+  svn_url: http://svn.code.sf.net/p/fable/code/GrainSpotter/trunk
+
+  patches:
+    - Makefile.patch
+
+#test:
+#  commands:
+#    - grainsweeper
+
+about:
+  license: LGPL
+  home: https://sourceforge.net/projects/fable/
+  summary: 3D x-ray diffraction utilities

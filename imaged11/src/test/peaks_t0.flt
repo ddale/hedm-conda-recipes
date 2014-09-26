@@ -1,0 +1,2 @@
+#  sc  fc  omega  Number_of_pixels  avg_intensity  s_raw  f_raw  sigs  sigf  covsf  sigo  covso  covfo  sum_intensity  sum_intensity^2  IMax_int  IMax_s  IMax_f  IMax_o  Min_s  Max_s  Min_f  Max_f  Min_o  Max_o  dety  detz  onfirst  onlast  spot3d_id
+  43.5025  81.1407  1.0410  262144  243.9198  43.5025  81.1407  34.1140  28.0370  0.3698  1.4171  0.0712  0.0478  63942120.0000  1155303642400.0000  20000.0000  20  56  2.0000  0  255  0  255  0.0000  3.0000  -81.1407  43.5025  0  1  0

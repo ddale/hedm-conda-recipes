@@ -1,0 +1,12 @@
+--- Makefile	(revision 5505)
++++ Makefile	(working copy)
+@@ -15,7 +15,7 @@
+ endif
+ 
+ # Define the name of the executable
+-EXECUTABLE = GrainSpotter.0.90$(EXE)
++EXECUTABLE = grainspotter$(EXE)
+ 
+ # Set the root directory for the build
+ #ROOTDIR = $(PWD)
+
