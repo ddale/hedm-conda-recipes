@@ -1,0 +1,36 @@
+package:
+  name: pillow
+  version: master
+
+source:
+  git_url: https://github.com/python-pillow/Pillow.git
+
+#patches:
+#  - windows_multiprocess.patch [win]
+
+requirements:
+  build:
+    - python
+    - zlib
+    - libpng
+    - libtiff
+    - jpeg
+    - freetype
+    - distribute
+  run:
+    - python
+    - jpeg [unix]
+    - zlib [unix]
+    - freetype [unix]
+    - libtiff [unix]
+
+test:
+  imports:
+    - PIL
+    - PIL.Image
+    - PIL._imagingtk [linux]
+    - PIL._imagingft [unix]
+
+about:
+  home: http://python-imaging.github.io/
+  license: Standard PIL license

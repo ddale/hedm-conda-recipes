@@ -4,6 +4,8 @@ package:
 
 source:
   svn_url: http://svn.code.sf.net/p/fable/code/xfab/trunk
+  patches:
+    - plot_gff.patch
 
 requirements:
   build:

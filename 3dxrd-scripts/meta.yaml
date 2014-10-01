@@ -1,0 +1,23 @@
+package:
+  name: 3dxrd-scripts
+  version: dev
+
+requirements:
+  run:
+    - fabian
+    - fabio
+    - grainspotter
+    - grainsweeper
+    - imaged11
+    - scipy
+    - sweep2png
+    - xfab
+
+#test:
+#  commands:
+#    - fumble 
+
+about:
+  license: GPL
+  home: https://sourceforge.net/projects/fable/
+  summary: 3D x-ray diffraction utilities

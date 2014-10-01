@@ -2,14 +2,18 @@ package:
   name: imaged11
   version: trunk
 
+source:
+  svn_url: http://svn.code.sf.net/p/fable/code/ImageD11/trunk
+
 requirements:
   build:
     - numpy
   run:
+    - fabio
+    - lxml
     - numpy
     - pillow
     - xfab
-    - fabio
 
 test:
   imports:
