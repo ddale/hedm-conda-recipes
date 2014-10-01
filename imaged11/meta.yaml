@@ -12,7 +12,7 @@ requirements:
     - fabio
     - lxml
     - numpy
-    - pillow
+    - pillow >=2.5.3
     - xfab
 
 test:
