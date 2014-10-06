@@ -136,7 +136,7 @@ else
 	echo "#   stop limit, min number of peaks, full path to .par file, crystal symmetry."
 	echo '#'
 	echo '# Example:'
-	echo "# run_makemap_all.sh n01.ubi n00.flt n01.flt 0.04 0.02 20 100 /home/$USER/restOfPathTo/parFile.par cubic"
+	echo "# makemap_all nall.ubi n00.flt rest.flt 0.03 0.02 5 100 NF_final.par cubic"
 	echo
 fi
 

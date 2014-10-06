@@ -100,9 +100,9 @@ if __name__ == '__main__':
         epilog=textwrap.dedent('''
             examples:
 
-            $ find_peaks FF_data/slice/Ti-7_14_img 1 1440 -179.875 0.25 -n 11 -x FF
-            $ find_peaks FF_data/silicon/raw/a 20 732 171.84 -0.48 -x FF
-            $ find_peaks NF_data/a 20 751 171.36 -0.48 -x NF
+            $ findpeaks FF_data/slice/Ti-7_14_img 1 1440 -179.875 0.25 -n 11 -x FF
+            $ findpeaks FF_data/silicon/raw/a 20 732 171.84 -0.48 -x FF
+            $ findpeaks NF_data/a 20 751 171.36 -0.48 -x NF
             ''')
         )
     parser.add_argument(

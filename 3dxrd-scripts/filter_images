@@ -112,7 +112,7 @@ if __name__=='__main__':
         epilog=textwrap.dedent('''
             example:
 
-            $ filter_layer.py NF_data a 20 750 -v
+            $ filter_images NF_data/a 20 750 -v
             ''')
         )
     parser.add_argument(

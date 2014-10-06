@@ -3,9 +3,10 @@ from __future__ import print_function
 
 import argparse
 import os
+import textwrap
 
 import numpy as np
-from praxes.io import tifffile
+import tifffile
 
 
 def load_ge2(
@@ -102,7 +103,15 @@ def main(args):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Converts ge2 files to tiff.')
+    parser = argparse.ArgumentParser(
+        description='Converts ge2 files to tiff.',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=textwrap.dedent('''
+            example:
+
+            $ ge2tiff -v -o output_file_stem input1.ge2 input2.ge2 ...
+            ''')
+        )
     parser.add_argument(
         'ge2', metavar='ge2', type=str, nargs='+',
         help='reads Adept .ge2 files and writes .tiff files'

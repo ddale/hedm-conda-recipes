@@ -385,7 +385,7 @@ if __name__ == '__main__':
             examples:
 
             $ tweakdetpars FF_fit.par m00.flt mall.ubi 0.02 2 FF_final.par -x FF
-            $ tweakdetpars NF_fit.par peaks_min10_t100.flt n01.ubi 0.03 3 NF_final.par -x NF
+            $ tweakdetpars NF_fit.par n00.flt nall.ubi 0.03 3 NF_final.par -x NF
             ''')
         )
     parser.add_argument(

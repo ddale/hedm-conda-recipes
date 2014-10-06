@@ -109,7 +109,7 @@ while [ $testCon -lt $testLim ]; do
 	ngrainscut=$NUMFOUND
 	if [ $numberofgrains -lt $ngrainscut ]; then
 	    (( spottercounter++ ))
-	    if [$spottercounter -ge ${#EULERSTEP[@]} ]; then
+	    if [ $spottercounter -ge ${#EULERSTEP[@]} ]; then
 		exit 0
 	    fi
 	    eulerstep=${EULERSTEP[$spottercounter]}
