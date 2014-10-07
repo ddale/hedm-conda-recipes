@@ -6,11 +6,11 @@ source:
   svn_url: http://svn.code.sf.net/p/fable/code/GrainSpotter/trunk
 
   patches:
-    - Makefile.patch
+    - mavericks.patch
 
 #test:
 #  commands:
-#    - grainsweeper
+#    - grainspotter
 
 about:
   license: LGPL

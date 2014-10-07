@@ -1,0 +1,123 @@
+Index: Makefile
+===================================================================
+--- Makefile	(revision 5508)
++++ Makefile	(working copy)
+@@ -15,7 +15,7 @@
+ endif
+
+ # Define the name of the executable
+-EXECUTABLE = GrainSpotter.0.90$(EXE)
++EXECUTABLE = grainspotter$(EXE)
+
+ # Set the root directory for the build
+ #ROOTDIR = $(PWD)
+@@ -39,10 +39,10 @@
+ ifeq ($(PLATFORM),win32-x86)
+   ifeq ($(OPT),YES)
+     CFLAGS  =  -O2 -g -c -Wall -D__NOINLINE__
+-    CFLAGS2 =  -O2 -g -Wall -D__NOINLINE__  -I$(INDEXINCDIR) -I$(FILEIOINCDIR)
++    CFLAGS2 =  -O2 -g -Wall -D__NOINLINE__  -I$(INDEXINCDIR) -I$(SPACEGRINCDIR)
+   else
+     CFLAGS  =  -g -c -Wall -D__NOINLINE__
+-    CFLAGS2 =  -g -Wall -D__NOINLINE__  -I$(INDEXINCDIR) -I$(FILEIOINCDIR)
++    CFLAGS2 =  -g -Wall -D__NOINLINE__  -I$(INDEXINCDIR) -I$(SPACEGRINCDIR)
+   endif
+   # These set the compiler to Mingw in the Cygwin environment
+   CC  += -mno-cygwin
+@@ -53,10 +53,10 @@
+ ifeq ($(PLATFORM),linux-x86)
+   ifeq ($(OPT),YES)
+     CFLAGS  =  -O2 -g -c -Wall -D__NOINLINE__ -D__LINUX__
+-    CFLAGS2 =  -O2 -g -Wall -D__NOINLINE__ -D__LINUX__  -I$(INDEXINCDIR) -I$(FILEIOINCDIR)
++    CFLAGS2 =  -O2 -g -Wall -D__NOINLINE__ -D__LINUX__  -I$(INDEXINCDIR) -I$(SPACEGRINCDIR)
+   else
+     CFLAGS  =  -g -c -Wall -D__NOINLINE__ -D__LINUX__
+-    CFLAGS2 =  -g -Wall -D__NOINLINE__ -D__LINUX__  -I$(INDEXINCDIR) -I$(FILEIOINCDIR)
++    CFLAGS2 =  -g -Wall -D__NOINLINE__ -D__LINUX__  -I$(INDEXINCDIR) -I$(SPACEGRINCDIR)
+   endif
+ endif
+
+@@ -92,7 +92,7 @@
+	$(CC) $(CFLAGS2) src/base.c -o $(EXECUTABLE) ${spacegrobjects} ${indexobjects} -lm
+
+ depend:
+-	makedepend --$(CFLAGS) -- $(SRCS)
++	makedepend -- $(CFLAGS2) -- $(indexsources) -- $(spacegrsources)
+
+
+ $(INDEXOBJDIR)/%.o: ${INDEXDIR}/%.C
+Index: src/index/header/index.h
+===================================================================
+--- src/index/header/index.h	(revision 5508)
++++ src/index/header/index.h	(working copy)
+@@ -19,7 +19,11 @@
+
+ #define EXPONENT (FACTBASE)-(BOX_BASE)+1  // 65: 25, 129: 24, 257, 23
+
++int makeU(double *u1, double *u2, double *v1, double *v2, double *U);
+
++double my_atan(double s, double c);
++
++
+ enum ref_states { UNKNOWN, ASSIGNED, OUTLIER };
+
+
+Index: src/index/index.c
+===================================================================
+--- src/index/index.c	(revision 5508)
++++ src/index/index.c	(working copy)
+@@ -6,7 +6,7 @@
+ #include "time.h"
+ #include "crystallography.h"
+ #include "index.h"
+-# include "utils.h"
++#include "utils.h"
+
+ /*
+  *
+@@ -64,9 +64,7 @@
+ static int final_search(SAMPLE *sample, CRYST *cryst);
+ static int final_search_UB(SAMPLE *sample, CRYST *cryst);
+
+-inline double my_atan(double s, double c);
+
+-
+ int doindexing(SAMPLE *sample, CRYST *cryst){
+   int i,j,k;
+   //  int iU[9];
+@@ -600,7 +598,7 @@
+ }
+
+
+-inline int BusLev(double *u, double *v, double *mat) {
++static int BusLev(double *u, double *v, double *mat) {
+   double norm,invnorm;
+
+   /* calculate matrix and make inversion */
+Index: src/index/pre_calculations.c
+===================================================================
+--- src/index/pre_calculations.c	(revision 5508)
++++ src/index/pre_calculations.c	(working copy)
+@@ -34,9 +34,7 @@
+
+ int makeU(double *u1, double *u2, double *v1, double *v2, double *U);
+
+-inline double my_atan(double s, double c);
+-
+-inline double my_atan(double s, double c) { /* omega in [-M_PI,M_PI] */
++double my_atan(double s, double c) { /* omega in [-M_PI,M_PI] */
+   double u=0;
+
+   if (s>=0 && c>=0) u = atan(s/c);
+Index: src/index/pseudodata.c
+===================================================================
+--- src/index/pseudodata.c	(revision 5508)
++++ src/index/pseudodata.c	(working copy)
+@@ -17,7 +17,7 @@
+
+ static int generate_gvectors(SAMPLE *sample, CRYST *cryst, double *U, double *x);
+
+-inline double my_atan(double s, double c);
++double my_atan(double s, double c);
+
+ double myrand();
