@@ -9,11 +9,12 @@ requirements:
   build:
     - python
   run:
-    - python
+    - fabio
+    - matplotlib
     - numpy
     - pillow
-    - matplotlib
     - pmw
+    - python
 #   - pyopengl
 
 test:
