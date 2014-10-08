@@ -5,8 +5,8 @@ package:
 source:
   svn_url: http://svn.code.sf.net/p/fable/code/GrainSpotter/trunk
 
-  patches:
-    - mavericks.patch
+  patches: # [osx]
+    - mavericks.patch # [osx]
 
 #test:
 #  commands:
