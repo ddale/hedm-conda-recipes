@@ -15,6 +15,7 @@ source:
 #    - grainsweeper
 
 about:
-  license: LGPL
+  license: GPL
   home: https://sourceforge.net/projects/fable/
-  summary: 3D x-ray diffraction utilities
+  summary: Fable module for reconstruction 3D space filling grain maps from box
+    beam nearfield data by Søren Schmidt

@@ -22,6 +22,6 @@ test:
     - fabio
 
 about:
-  license: LGPL
+  license: GPL
   home: https://github.com/kif/fabio
-  summary: 3DXRD
+  summary: Fable I/O library for diffraction images

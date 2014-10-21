@@ -22,6 +22,6 @@ test:
     - Fabian
 
 about:
-  license: LGPL
+  license: GPL
   home: https://sourceforge.net/projects/fable/
   summary: 3D x-ray diffraction utilities

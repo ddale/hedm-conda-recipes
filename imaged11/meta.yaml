@@ -20,6 +20,6 @@ test:
     - ImageD11
 
 about:
-  license: LGPL
+  license: GPL
   home: https://sourceforge.net/projects/fable/
-  summary: 3D x-ray diffraction utilities
+  summary: Fable software for analysis of 2D diffraction images by Jon Wright
