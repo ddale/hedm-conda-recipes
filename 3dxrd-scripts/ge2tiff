@@ -80,7 +80,7 @@ def main(args):
             raise NotImplementedError('dezinging has not been implemented')
             continue
         if args.summed:
-            out = "%s.tiff" % (arg.rstrip('.ge2'))
+            out = "%s.tif" % (arg.rstrip('.ge2'))
             if os.path.exists(out):
                 if args.verbose:
                     print('Skipping %s, %s already exists' % (arg,out))
@@ -95,7 +95,7 @@ def main(args):
         else:
             stem = args.output if args.output else arg.rstrip('.ge2')
             for i, d in enumerate(AdeptFile(arg)):
-                out = '%s_%05d.tiff' % (stem, tiff_fileno)
+                out = '%s_%05d.tif' % (stem, tiff_fileno)
                 if args.verbose:
                     print("saving image %d from %s as %s" % (i+1, arg, out))
                 tifffile.imsave(out, d)
