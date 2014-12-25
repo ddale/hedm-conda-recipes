@@ -7,6 +7,9 @@ source:
   sha1: 6c8c30cbf6c827533bffa0ea2d9ecb377e02aadf
   url: https://downloads.sourceforge.net/project/pmw/Pmw-2.0.0.tar.gz
 
+build:
+  script: python setup.py install
+
 requirements:
   build:
     - python
