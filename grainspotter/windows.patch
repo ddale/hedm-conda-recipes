@@ -1,0 +1,33 @@
+Index: Makefile
+===================================================================
+--- Makefile    (revision 5520)
++++ Makefile    (working copy)
+@@ -1,6 +1,6 @@
+ # Set the platform
+-#PLATFORM = win32-x86
+-PLATFORM = linux-x86
++PLATFORM = win32-x86
++#PLATFORM = linux-x86
+
+ # Set to YES for optimized and NO for debug
+ OPT = YES
+@@ -15,7 +15,7 @@
+ endif
+
+ # Define the name of the executable
+-EXECUTABLE = GrainSpotter.0.90$(EXE)
++EXECUTABLE = grainspotter$(EXE)
+
+ # Set the root directory for the build
+ #ROOTDIR = $(PWD)
+@@ -45,8 +45,8 @@
+     CFLAGS2 =  -g -Wall -D__NOINLINE__  -I$(INDEXINCDIR) -I$(FILEIOINCDIR)
+   endif
+   # These set the compiler to Mingw in the Cygwin environment
+-  CC  += -mno-cygwin
+-  C++ += -mno-cygwin
++  #CC  += -mno-cygwin
++  #C++ += -mno-cygwin
+ endif
+
+ # Linux
