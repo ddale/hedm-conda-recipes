@@ -104,7 +104,7 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        prog='ge2tiff.py'
+        prog='ge2tiff.py',
         description='Converts ge2 files to tiff.',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=textwrap.dedent('''
