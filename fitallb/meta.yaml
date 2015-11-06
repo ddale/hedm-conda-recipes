@@ -1,0 +1,22 @@
+package:
+  name: fitallb
+  version: trunk
+
+source:
+  svn_url: http://svn.code.sf.net/p/fable/code/FitAllB/trunk
+  patches:
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - FitAllB
+
+about:
+  license: GPL
+  home: https://sourceforge.net/projects/fable/
+  summary: Fable crystallography toolbox

@@ -6,6 +6,7 @@ requirements:
   run:
     - fabian
     - fabio
+    - fitallb
     - grainspotter
     - grainsweeper3d
     - imaged11
