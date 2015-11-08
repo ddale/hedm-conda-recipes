@@ -1,9 +1,9 @@
 package:
-  name: fitallb
+  name: polyxsim
   version: trunk
 
 source:
-  svn_url: http://svn.code.sf.net/p/fable/code/FitAllB/trunk
+  svn_url: http://svn.code.sf.net/p/fable/code/simulation/PolyXSim/trunk
   patches:
 
 requirements:
@@ -11,19 +11,15 @@ requirements:
     - python
   run:
     - fabio
-    - imaged11
-    - iminuit
     - numpy
     - pillow
-    - polyxsim
-    - pycifrw
     - python
     - scipy
     - xfab
 
 test:
   imports:
-    - FitAllB
+    - polyxsim
 
 about:
   license: GPL

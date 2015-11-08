@@ -1,0 +1,23 @@
+package:
+  name: iminuit
+  version: master
+
+source:
+  git_url: https://github.com/iminuit/iminuit.git
+  patches:
+
+requirements:
+  build:
+    - cython
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - iminuit
+
+about:
+  license: MIT
+  home: https://github.com/iminuit/iminuit
+  summary: Numerical function minimization

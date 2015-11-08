@@ -1,0 +1,24 @@
+package:
+  name: pycifrw
+  version: 4.1.1
+
+source:
+  fn: PyCifRW-4.1.1.tar.gz
+  url: https://pypi.python.org/packages/source/P/PyCifRW/PyCifRW-4.1.1.tar.gz
+  md5: 2435f47a1a7a935d43c8402d8f4339d5
+
+requirements:
+  build:
+    - setuptools
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - CifFile
+
+about:
+  license: BSD
+  home: https://pypi.python.org/pypi/PyCifRW
+  summary: CIF/STAR file support for Python
