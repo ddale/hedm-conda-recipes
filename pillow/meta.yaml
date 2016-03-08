@@ -1,8 +1,9 @@
 package:
   name: pillow
-  version: master
+  version: "3.1.1"
 
 source:
+  git_rev: 3.1.1
   git_url: https://github.com/python-pillow/Pillow.git
 
   patches:
@@ -16,7 +17,7 @@ requirements:
     - libtiff
     - jpeg
     - freetype
-    - distribute
+    - setuptools
   run:
     - python
     - jpeg [unix]
@@ -28,7 +29,7 @@ test:
   imports:
     - PIL
     - PIL.Image
-    - PIL._imagingtk [linux]
+    - PIL._imagingtk [unix]
     - PIL._imagingft [unix]
 
 about:

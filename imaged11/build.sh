@@ -1,3 +1,5 @@
+unset LDFLAGS
+
 #cp -r $RECIPE_DIR/src .
 #cd src
 
